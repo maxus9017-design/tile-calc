@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Мой калькулятор плиточника</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <input type="number" id="shirina-input" placeholder="Ширина комнаты" />
+      <input type="number" id="dlina-input" placeholder="Длина комнаты" />
+      <input type="number" id="cena-input" placeholder="Цена за м2" />
+      <input
+        type="number"
+        id="weight-input"
+        placeholder="Вес 1 м² плитки (кг)"
+      />
+      <input type="number" id="tileSh-input" placeholder="Ширина плитки см" />
+      <input type="number" id="tileD-input" placeholder="Длина плитки см" />
+      <button id="calc-btn" onclick="rasschitat()">Рассчитать</button>
+      <button id="reset-btn" onclick="ochistit()">очистить все</button>
+      <h1>Калькулятор плиточника</h1>
+      <div id="result">Здесь появиться расчет...</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
