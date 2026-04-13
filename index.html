@@ -10,16 +10,43 @@
   </head>
   <body>
     <div class="container">
-      <input type="number" id="shirina-input" placeholder="Ширина комнаты" />
-      <input type="number" id="dlina-input" placeholder="Длина комнаты" />
-      <input type="number" id="cena-input" placeholder="Цена за м2" />
-      <input
-        type="number"
-        id="weight-input"
-        placeholder="Вес 1 м² плитки (кг)"
-      />
-      <input type="number" id="tileSh-input" placeholder="Ширина плитки см" />
-      <input type="number" id="tileD-input" placeholder="Длина плитки см" />
+      <div class="grid-wrapper">
+        <!-- Создаем первую часть калькулятора -->
+        <div class="input-group">
+          <label for="shirina-input"> Ширина комнаты (м)</label>
+          <input
+            type="number"
+            id="shirina-input"
+            step="0.1"
+            placeholder="0.00"
+          />
+          <label for="dlina-input"> Длина комнаты (м)</label>
+          <input type="number" id="dlina-input" step="0.1" placeholder="0.00" />
+          <label for="cena-input"> Цена плитки за м2 (руб)</label>
+          <input type="number" id="cena-input" step="0.1" placeholder="0.0" />
+          <label for="weight-input"> Вес 1 м2 плитки (кг)</label>
+          <input type="number" id="weight-input" placeholder="0 (кг)" />
+        </div>
+        <!-- Создаем вторую часть калькулятора -->
+        <div class="input-group">
+          <label for="tileSh-input"> Ширина плитки в (см)</label>
+          <input type="number" id="tileSh-input" step="0.1" placeholder="0.0" />
+          <label for="tileD-input"> Длина плитки (см)</label>
+          <input type="number" id="tileD-input" step="0.1" placeholder="0.0" />
+          <label for="shov-input"> Ширина шва (мм)</label>
+          <input type="number" id="shov-input" step="0.1" placeholder="0.0" />
+          <label for="tolshina-input"> Толщина плитки (мм)</label>
+          <input
+            type="number"
+            id="tolshina-input"
+            step="0.1"
+            placeholder="0.0"
+          />
+          <label for="meshkov-input"> Мешков шт по 25 (кг)</label>
+          <input type="number" id="meshkov-input" placeholder="0" />
+        </div>
+      </div>
+
       <button id="calc-btn" onclick="rasschitat()">Рассчитать</button>
       <button id="reset-btn" onclick="ochistit()">очистить все</button>
       <h1>Калькулятор плиточника</h1>
