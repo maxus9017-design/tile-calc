@@ -11,7 +11,7 @@ body {
 input {
   width: 100%;
   padding: 12px;
-  margin: 15px 0;
+  margin-bottom: 15px;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-sizing: border-box;
@@ -35,7 +35,7 @@ button {
   margin-bottom: 20px;
 }
 #calc-btn {
-  background-color: #2e31e8;
+  background-color: #372ee8;
   color: white;
 }
 #calc-btn:hover {
@@ -49,9 +49,21 @@ button {
   background-color: #d32f27;
 }
 .container {
-  max-width: 400px;
+  max-width: 800 px;
   margin: auto;
-  padding: 30px;
-  background-color: rgb(70, 230, 70);
+  padding: 20px;
+  background-color: rgb(247, 249, 247);
   border-radius: 20px;
+  box-shadow: 0 4px 10px rgb(0, 0, 0, 1);
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+/*делаем сетку из 2 колонок*/
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
 }
