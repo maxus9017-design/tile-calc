@@ -70,7 +70,7 @@ label {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-.full-width-lable,.full-width-select{
+.full-width-label,.full-width-select{
   grid-column: 1/3;
 }
 /* Подсвечиваем поля если не ввели данные*/
